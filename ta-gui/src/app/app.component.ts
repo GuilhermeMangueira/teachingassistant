@@ -36,5 +36,8 @@ export class AppComponent {
       this.cpfduplicado = false;
    }
 
+<<<<<<< HEAD
+>>>>>>> 3d64e16... modularizando o componente principal
+=======
 >>>>>>> 3d64e16... modularizando o componente principal
 }
