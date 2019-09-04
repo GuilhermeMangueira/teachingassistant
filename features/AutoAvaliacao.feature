@@ -33,7 +33,7 @@ WHEN eu visualizo a lista de estudantes, eu posso ver que não há discrepância
 
 Cenario: lista de alunos com  auto avaliação discrepante
 GIVEN eu estou logado como o professor “Paulo”
-AND eu já atribuí as notas dos alunos “Roberto”, “Arthur” e “Laura”, com “MA,MANA,MA,MA,MPA” , “MA,MPA,MPA,MA,MA” e “MA,MA,MA,MA,MA” respectivamente
+AND eu já atribuí as notas dos alunos “Roberto”, “Arthur” e “Laura”, com “MA,MANA,MA,MA,MPA” , “MA,MPA,MPA,MA,MA” e “MA,MA,MA,MA,MA” respectivamente<Criando COnflito de Merge>
 AND os alunos “Roberto”, “Arthur” e “Laura” se auto avaliaram com as notas “MA,MANA,MA,MA,MPA”, “MA, MA, MA,MA,MA” e “MPA,MPA,MPA,MPA,MPA,MANA”, respectivamente.
 WHEN eu visualizo a lista de estudantes, eu posso ver que o aluno “Arthur” está na lista de discrepância, com 40% de discrepância nas notas 
 
