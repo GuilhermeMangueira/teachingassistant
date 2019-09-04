@@ -26,3 +26,15 @@ WHEN “Jorge” atribui notas “MPA” e “Mana”para “Entender conceitos 
 THEN a avaliação não é computada e é exibida uma mensagem de erro
 AND um novo passo adicional acontece
 
+Cenario: lista de alunos sem auto avaliação discrepante
+GIVEN eu estou logado como o professor “Paulo”
+AND eu já atribuí as notas dos alunos “Roberto”, “Arthur” e “Laura”, com “MA,MANA,MA,MA,MPA” , “MA,MPA,MPA,MA,MA” e “MA,MA,MA,MA,MA” respectivamente
+AND os alunos “Roberto”, “Arthur” e “Laura” se auto avaliaram com as notas “MA,MANA,MA,MA,MPA”, “MA, MA, MPA,MA,MA” e “MPA,MPA,MPA,MPA,MPA,MANA”, respectivamente.
+WHEN eu visualizo a lista de estudantes, eu posso ver que não há discrepâncias nas avaliações
+
+Cenario: lista de alunos com  auto avaliação discrepante
+GIVEN eu estou logado como o professor “Paulo”
+AND eu já atribuí as notas dos alunos “Roberto”, “Arthur” e “Laura”, com “MA,MANA,MA,MA,MPA” , “MA,MPA,MPA,MA,MA” e “MA,MA,MA,MA,MA” respectivamente
+AND os alunos “Roberto”, “Arthur” e “Laura” se auto avaliaram com as notas “MA,MANA,MA,MA,MPA”, “MA, MA, MA,MA,MA” e “MPA,MPA,MPA,MPA,MPA,MANA”, respectivamente.
+WHEN eu visualizo a lista de estudantes, eu posso ver que o aluno “Arthur” está na lista de discrepância, com 40% de discrepância nas notas 
+
