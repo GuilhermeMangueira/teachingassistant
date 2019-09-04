@@ -25,3 +25,9 @@ AND possui as avaliações “MA”,”MA” e”MPA” nas metas “Entender co
 WHEN “Jorge” atribui notas “MPA” e “Mana”para “Entender conceitos de requisitos” e  “Especificar requisitos com qualidade”
 THEN a avaliação não é computada e é exibida uma mensagem de erro.
 
+Cenario: lista de alunos sem auto avaliação discrepante
+GIVEN eu estou logado como o professor “Paulo”
+AND eu já atribuí as notas dos alunos “Roberto”, “Arthur” e “Laura”, com “MA,MANA,MA,MA,MPA” , “MA,MPA,MPA,MA,MA” e “MA,MA,MA,MA,MA” respectivamente
+AND os alunos “Roberto”, “Arthur” e “Laura” se auto avaliaram com as notas “MA,MANA,MA,MA,MPA”, “MA, MA, MPA,MA,MA” e “MPA,MPA,MPA,MPA,MPA,MANA”, respectivamente.
+WHEN eu visualizo a lista de estudantes, eu posso ver que não há discrepâncias nas avaliações
+
