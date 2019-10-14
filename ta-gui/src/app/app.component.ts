@@ -13,10 +13,34 @@ export class AppComponent {
    aluno: Aluno = {nome: "", cpf: "", email: ""};
    alunoService = new AlunoService();
    alunos: Aluno[] = [];
+<<<<<<< HEAD
 
    gravar(a: Aluno): void {
      this.alunoService.gravar(a);
      this.alunos.push(a);
      this.aluno = {nome: "", cpf: "", email: ""};
   }
+=======
+   cpfduplicado: boolean = false;
+
+   criarAluno(a: Aluno): void {
+     if (this.alunoService.criar(a)) {
+       this.alunos.push(a);
+       this.aluno = new Aluno();
+     } else {
+       this.cpfduplicado = true;
+     }
+   }
+
+   onMove(): void {
+      this.cpfduplicado = false;
+   }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3d64e16... modularizando o componente principal
+=======
+>>>>>>> 3d64e16... modularizando o componente principal
+=======
+>>>>>>> 3d64e16... modularizando o componente principal
 }
