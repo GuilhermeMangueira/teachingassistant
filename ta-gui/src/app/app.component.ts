@@ -37,6 +37,9 @@ export class AppComponent {
    }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3d64e16... modularizando o componente principal
+=======
 >>>>>>> 3d64e16... modularizando o componente principal
 =======
 >>>>>>> 3d64e16... modularizando o componente principal

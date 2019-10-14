@@ -7,7 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3d64e16... modularizando o componente principal
 =======
 >>>>>>> 3d64e16... modularizando o componente principal
 import { MetasComponent } from './metas.component';
